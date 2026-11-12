@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- EDIT: Page title shown in the browser tab -->
-  <title>Наша команда - Тупые балбесы</title>
+  <title>Our Team — Company Name</title>
   <!-- /EDIT -->
 
   <!-- SEO & social-media preview (optional to edit) -->
@@ -14,37 +14,55 @@
   <meta property="og:description" content="Meet the team of Company Name." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/photo-1.jpg" />
+
+  <!-- Modern web font (Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <!-- ============================================================
+       SITE HEADER (шапка сайта)
+       ▼▼▼ EDIT HERE: logo, headings, tagline, buttons ▼▼▼
+       ============================================================ -->
   <header class="hero">
     <nav class="hero-nav">
-      <span class="logo">◆ <!-- EDIT: Logo -->MAKEP squad<!-- /EDIT --></span>
+      <!-- EDIT: Logo text (short company name) -->
+      <span class="logo">◆ <!-- EDIT: Logo -->Company Name<!-- /EDIT --></span>
+      <!-- /EDIT -->
       <a class="hero-btn hero-btn-ghost" href="#team">Команда</a>
     </nav>
 
     <div class="hero-inner">
-      <!-- EDIT: Маленький текст над заголовком -->
+      <!-- EDIT: Small label above the title -->
       <p class="hero-kicker">// ЛЮДИ, КОТОРЫЕ ДЕЛАЮТ МАГИЮ</p>
-      <!-- EDIT: Главный заголовок. Слово в <em>...</em> переливается градиентом -->
+      <!-- /EDIT -->
+
+      <!-- EDIT: Main heading. Wrap a word in <em> for the gradient accent -->
       <h1 class="hero-title">Наша <em>команда</em></h1>
-      <!-- EDIT: Подзаголовок -->
+      <!-- /EDIT -->
+
+      <!-- EDIT: Subtitle / tagline -->
       <p class="hero-subtitle">
-        Пять человек, которые стоят за&nbsp;<strong>MAKEP squad</strong>.
+        Пять человек, которые стоят за&nbsp;<strong><!-- EDIT: Company name -->Company Name<!-- /EDIT --></strong>.
         Знакомьтесь&nbsp;— это те, кто превращает идеи в&nbsp;реальность.
       </p>
-      <!-- EDIT: Текст кнопки -->
+      <!-- /EDIT -->
+
+      <!-- EDIT: Button text and link (link "#team" scrolls to the cards) -->
       <a class="hero-btn" href="#team">Смотреть команду ↓</a>
+      <!-- /EDIT -->
     </div>
 
+    <!-- Decorative glow blobs (purely visual, safe to delete) -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
   </header>
+  <!-- ▲▲▲ END OF EDITABLE AREA — HEADER ▲▲▲ -->
 
   <main class="team-grid" id="team">
 
@@ -52,133 +70,141 @@
          PERSON CARD 1
          ▼▼▼ EDIT HERE: replace photo + text below ▼▼▼
          ============================================================ -->
-    <section class="person-card">
+    <a class="person-card card-link" href="team/person-1.html">
       <div class="photo-slot">
         <!-- EDIT: Replace the placeholder image path with your photo,
              e.g. src="images/jane.jpg". Keep it inside the images/ folder. -->
-        <img src="images/ya.jpg" alt="Photo of Artem" />
+        <img src="images/photo-1.jpg" alt="Photo of Jane Doe" />
         <!-- /EDIT -->
       </div>
       <div class="info-slot">
         <!-- EDIT: Name -->
-        <h2 class="name">Артём Маматов</h2>
+        <h2 class="name">Jane Doe</h2>
         <!-- /EDIT -->
         <!-- EDIT: Job title -->
-        <p class="role">Основатель сайта</p>
+        <p class="role">Chief Executive Officer</p>
         <!-- /EDIT -->
         <!-- EDIT: Description (a few sentences about this person) -->
         <p class="description">
-          Урод, тупой, вонючий и все такое. Любит Москву, зачем-то дружит с Матвеем #НедоВайбкодер
+          Write a short description of Jane here: her role, background,
+          achievements and anything else you'd like visitors to know.
         </p>
         <!-- /EDIT -->
+        <span class="card-more">Подробнее →</span>
       </div>
-    </section>
+    </a>
     <!-- ▲▲▲ END OF EDITABLE AREA — PERSON 1 ▲▲▲ -->
 
     <!-- ============================================================
          PERSON CARD 2
          ▼▼▼ EDIT HERE: replace photo + text below ▼▼▼
          ============================================================ -->
-    <section class="person-card">
+    <a class="person-card card-link" href="team/person-2.html">
       <div class="photo-slot">
         <!-- EDIT: Replace with your photo, e.g. src="images/john.jpg" -->
-        <img src="images/matvei.jpg" alt="Photo of John Smith" />
+        <img src="images/matvei.jpg" alt="Photo of Matvei" />
         <!-- /EDIT -->
       </div>
       <div class="info-slot">
         <!-- EDIT: Name -->
-        <h2 class="name">Матвей Баскаков</h2>
+        <h2 class="name">John Smith</h2>
         <!-- /EDIT -->
         <!-- EDIT: Job title -->
-        <p class="role">MOGGатель команды</p>
+        <p class="role">Chief Technology Officer</p>
         <!-- /EDIT -->
         <!-- EDIT: Description -->
         <p class="description">
-          Красавчик, легенда, тупой иногда правда. Короче главное лицо команды, шутит иногда, хорошо никогда правда #БатяСкинь500Рублей
+          Write a short description of John here: his role, background,
+          achievements and anything else you'd like visitors to know.
         </p>
         <!-- /EDIT -->
+        <span class="card-more">Подробнее →</span>
       </div>
-    </section>
+    </a>
     <!-- ▲▲▲ END OF EDITABLE AREA — PERSON 2 ▲▲▲ -->
 
     <!-- ============================================================
          PERSON CARD 3
          ▼▼▼ EDIT HERE: replace photo + text below ▼▼▼
          ============================================================ -->
-    <section class="person-card">
+    <a class="person-card card-link" href="team/person-3.html">
       <div class="photo-slot">
         <!-- EDIT: Replace with your photo, e.g. src="images/alice.jpg" -->
-        <img src="images/Pol.jpg" alt="Photo of Polina" />
+        <img src="images/photo-3.jpg" alt="Photo of Alice Johnson" />
         <!-- /EDIT -->
       </div>
       <div class="info-slot">
         <!-- EDIT: Name -->
-        <h2 class="name">Полина Сагитова</h2>
+        <h2 class="name">Alice Johnson</h2>
         <!-- /EDIT -->
         <!-- EDIT: Job title -->
-        <p class="role">Инвестор проекта</p>
+        <p class="role">Head of Marketing</p>
         <!-- /EDIT -->
         <!-- EDIT: Description -->
         <p class="description">
-          Богатая, вонючая (сдает физику потому что), работает и получает огромные деньги (не может их дождаться).
-          #ПипетЭрнДайЗайдуПоссатьЛин
+          Write a short description of Alice here: her role, background,
+          achievements and anything else you'd like visitors to know.
         </p>
         <!-- /EDIT -->
+        <span class="card-more">Подробнее →</span>
       </div>
-    </section>
+    </a>
     <!-- ▲▲▲ END OF EDITABLE AREA — PERSON 3 ▲▲▲ -->
 
     <!-- ============================================================
          PERSON CARD 4
          ▼▼▼ EDIT HERE: replace photo + text below ▼▼▼
          ============================================================ -->
-    <section class="person-card">
+    <a class="person-card card-link" href="team/person-4.html">
       <div class="photo-slot">
         <!-- EDIT: Replace with your photo, e.g. src="images/bob.jpg" -->
-        <img src="images/ern.jpg" alt="Photo of Bob Brown" />
+        <img src="images/photo-4.jpg" alt="Photo of Bob Brown" />
         <!-- /EDIT -->
       </div>
       <div class="info-slot">
         <!-- EDIT: Name -->
-        <h2 class="name">Эрнест ПТУ</h2>
+        <h2 class="name">Bob Brown</h2>
         <!-- /EDIT -->
         <!-- EDIT: Job title -->
-        <p class="role">Любитель тараканов</p>
+        <p class="role">Lead Developer</p>
         <!-- /EDIT -->
         <!-- EDIT: Description -->
         <p class="description">
-          Кинул нас и ушел в ПТУ, но мы его все равно любим. Еще квартира крутая у него. #ВоВоМойЛюбимыйМомент
+          Write a short description of Bob here: his role, background,
+          achievements and anything else you'd like visitors to know.
         </p>
         <!-- /EDIT -->
+        <span class="card-more">Подробнее →</span>
       </div>
-    </section>
+    </a>
     <!-- ▲▲▲ END OF EDITABLE AREA — PERSON 4 ▲▲▲ -->
 
     <!-- ============================================================
          PERSON CARD 5
          ▼▼▼ EDIT HERE: replace photo + text below ▼▼▼
          ============================================================ -->
-    <section class="person-card">
+    <a class="person-card card-link" href="team/person-5.html">
       <div class="photo-slot">
         <!-- EDIT: Replace with your photo, e.g. src="images/emma.jpg" -->
-        <img src="images/kate.jpg" alt="Photo of Emma Davis" />
+        <img src="images/photo-5.jpg" alt="Photo of Emma Davis" />
         <!-- /EDIT -->
       </div>
       <div class="info-slot">
         <!-- EDIT: Name -->
-        <h2 class="name">Катя Лаптева</h2>
+        <h2 class="name">Emma Davis</h2>
         <!-- /EDIT -->
         <!-- EDIT: Job title -->
-        <p class="role">Маленькая, да удаленькая</p>
+        <p class="role">Product Manager</p>
         <!-- /EDIT -->
         <!-- EDIT: Description -->
         <p class="description">
-          Всеобщая любимица, не сдает профмат (единственный минус), гуманитарий (ладно, не единственный)
-          #КатяДайСписать
+          Write a short description of Emma here: her role, background,
+          achievements and anything else you'd like visitors to know.
         </p>
         <!-- /EDIT -->
+        <span class="card-more">Подробнее →</span>
       </div>
-    </section>
+    </a>
     <!-- ▲▲▲ END OF EDITABLE AREA — PERSON 5 ▲▲▲ -->
 
   </main>
