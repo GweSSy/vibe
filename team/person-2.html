@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT: Page title shown in the browser tab -->
+  <title>John Smith — Наша команда</title>
+  <!-- /EDIT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="subpage">
+
+  <!-- Top bar: back to main page -->
+  <nav class="sub-nav">
+    <span class="logo">◆ <!-- EDIT: Logo -->Company Name<!-- /EDIT --></span>
+    <a class="hero-btn hero-btn-ghost" href="../index.html">← На главную</a>
+  </nav>
+
+  <!-- ============================================================
+       PERSON HEADER
+       ▼▼▼ EDIT HERE: main photo, name, role, short tagline ▼▼▼
+       ============================================================ -->
+  <header class="person-hero">
+    <div class="person-hero-inner">
+      <div class="person-hero-photo">
+        <!-- EDIT: Main (big) photo of the person -->
+        <img src="../images/matvei.jpg" alt="Photo of John Smith" />
+        <!-- /EDIT -->
+      </div>
+      <div class="person-hero-info">
+        <!-- EDIT: Small label above the name -->
+        <p class="hero-kicker">// ЧЛЕН КОМАНДЫ</p>
+        <!-- /EDIT -->
+        <!-- EDIT: Name (word inside <em> gets the gradient accent) -->
+        <h1 class="person-name">John <em>Smith</em></h1>
+        <!-- /EDIT -->
+        <!-- EDIT: Job title -->
+        <p class="role">Chief Technology Officer</p>
+        <!-- /EDIT -->
+        <!-- EDIT: Short tagline under the name -->
+        <p class="person-tagline">Пара слов о человеке в одну-две строки.</p>
+        <!-- /EDIT -->
+      </div>
+    </div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </header>
+  <!-- ▲▲▲ END OF EDITABLE AREA — HEADER ▲▲▲ -->
+
+  <main class="person-main">
+
+    <!-- ============================================================
+         FULL DESCRIPTION
+         ▼▼▼ EDIT HERE: detailed text about the person ▼▼▼
+         ============================================================ -->
+    <section class="bio-block">
+      <h2 class="section-title">О&nbsp;человеке</h2>
+      <!-- EDIT: Long description. Add as many <p> paragraphs as you need. -->
+      <p>
+        Здесь разместите подробное описание: биографию, путь в компании,
+        ключевые достижения, интересы и любые факты, которые захотите
+        рассказать посетителям сайта.
+      </p>
+      <p>
+        Чтобы добавить новый абзац, просто скопируйте блок
+        &lt;p&gt;...&lt;/p&gt; целиком и вставьте свой текст внутрь.
+      </p>
+      <!-- /EDIT -->
+    </section>
+    <!-- ▲▲▲ END OF EDITABLE AREA — DESCRIPTION ▲▲▲ -->
+
+    <!-- ============================================================
+         EXTRA PHOTOS (3 slots)
+         ▼▼▼ EDIT HERE: replace with your own photos ▼▼▼
+         ============================================================ -->
+    <section class="gallery-block">
+      <h2 class="section-title">Галерея</h2>
+      <div class="gallery-grid">
+
+        <!-- EDIT: Extra photo #1 -->
+        <figure class="gallery-item">
+          <img src="../images/matvei.jpg" alt="Extra photo 1" />
+          <figcaption>Подпись к фото 1</figcaption>
+        </figure>
+        <!-- /EDIT -->
+
+        <!-- EDIT: Extra photo #2 -->
+        <figure class="gallery-item">
+          <img src="../images/matvei.jpg" alt="Extra photo 2" />
+          <figcaption>Подпись к фото 2</figcaption>
+        </figure>
+        <!-- /EDIT -->
+
+        <!-- EDIT: Extra photo #3 -->
+        <figure class="gallery-item">
+          <img src="../images/matvei.jpg" alt="Extra photo 3" />
+          <figcaption>Подпись к фото 3</figcaption>
+        </figure>
+        <!-- /EDIT -->
+
+      </div>
+    </section>
+    <!-- ▲▲▲ END OF EDITABLE AREA — GALLERY ▲▲▲ -->
+
+    <!-- ============================================================
+         LINKS TO OTHER TEAM MEMBERS (clickable mini-cards)
+         ▼▼▼ EDIT HERE: names/photos on the mini-cards ▼▼▼
+         ============================================================ -->
+    <section class="other-team">
+      <h2 class="section-title">Другие участники команды</h2>
+      <div class="mini-grid">
+
+        <a class="mini-card" href="person-1.html">
+          <img src="../images/photo-1.jpg" alt="" />
+          <!-- EDIT: name on mini-card 1 -->
+          <span>Jane Doe</span>
+          <!-- /EDIT -->
+        </a>
+
+        <a class="mini-card" href="person-3.html">
+          <img src="../images/photo-3.jpg" alt="" />
+          <!-- EDIT: name on mini-card 3 -->
+          <span>Alice Johnson</span>
+          <!-- /EDIT -->
+        </a>
+
+        <a class="mini-card" href="person-4.html">
+          <img src="../images/photo-4.jpg" alt="" />
+          <!-- EDIT: name on mini-card 4 -->
+          <span>Bob Brown</span>
+          <!-- /EDIT -->
+        </a>
+
+        <a class="mini-card" href="person-5.html">
+          <img src="../images/photo-5.jpg" alt="" />
+          <!-- EDIT: name on mini-card 5 -->
+          <span>Emma Davis</span>
+          <!-- /EDIT -->
+        </a>
+      </div>
+      <p class="back-line"><a href="../index.html">← Вернуться ко всей команде</a></p>
+    </section>
+    <!-- ▲▲▲ END OF EDITABLE AREA — OTHER TEAM ▲▲▲ -->
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 <!-- EDIT: Company name -->Company Name<!-- /EDIT -->. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
