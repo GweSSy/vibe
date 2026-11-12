@@ -14,19 +14,39 @@
   <meta property="og:description" content="Meet the team of Company Name." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/photo-1.jpg" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <!-- EDIT: Main heading -->
-    <h1>Наша команда</h1>
-    <!-- /EDIT -->
-    <p>Выбери своего покемона <strong><!-- EDIT: Company name -->Тупые балбесы<!-- /EDIT --></strong></p>
+  <header class="hero">
+    <nav class="hero-nav">
+      <span class="logo">◆ <!-- EDIT: Logo -->Company Name<!-- /EDIT --></span>
+      <a class="hero-btn hero-btn-ghost" href="#team">Команда</a>
+    </nav>
+
+    <div class="hero-inner">
+      <!-- EDIT: Маленький текст над заголовком -->
+      <p class="hero-kicker">// ЛЮДИ, КОТОРЫЕ ДЕЛАЮТ МАГИЮ</p>
+      <!-- EDIT: Главный заголовок. Слово в <em>...</em> переливается градиентом -->
+      <h1 class="hero-title">Наша <em>команда</em></h1>
+      <!-- EDIT: Подзаголовок -->
+      <p class="hero-subtitle">
+        Пять человек, которые стоят за&nbsp;<strong>Company Name</strong>.
+        Знакомьтесь&nbsp;— это те, кто превращает идеи в&nbsp;реальность.
+      </p>
+      <!-- EDIT: Текст кнопки -->
+      <a class="hero-btn" href="#team">Смотреть команду ↓</a>
+    </div>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
   </header>
 
-  <main class="team-grid">
+  <main class="team-grid" id="team">
 
     <!-- ============================================================
          PERSON CARD 1
