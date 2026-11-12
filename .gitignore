@@ -1,0 +1,6 @@
+# OS / editor junk — never commit these
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
