@@ -231,3 +231,167 @@ html { scroll-behavior: smooth; }
   .hero { min-height: 60vh; }
   .team-grid { gap: 16px; padding: 0 12px; margin: 24px auto; }
 }
+
+/* ============================================================
+   CLICKABLE CARDS (main page)
+   ============================================================ */
+a.card-link { display: block; text-decoration: none; color: inherit; cursor: pointer; }
+.card-more {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #7873f5;
+}
+a.card-link:hover .card-more { color: #ff6ec4; }
+
+/* ============================================================
+   PERSON SUBPAGES (team/person-N.html)
+   ============================================================ */
+.subpage { background: #f6f7fb; }
+
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  background: rgba(15, 12, 41, 0.95);
+}
+.sub-nav .logo { color: #fff; font-weight: 800; letter-spacing: 0.5px; }
+.sub-nav .hero-btn-ghost { padding: 8px 20px; font-size: 0.9rem; }
+
+.person-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 70px 24px 90px;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+.person-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.person-hero-photo img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+}
+.person-hero-info { flex: 1; min-width: 280px; }
+.person-name {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+.person-name em {
+  font-style: normal;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4facfe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.person-hero-info .role { color: #ffd6ec; }
+.person-tagline { color: rgba(255, 255, 255, 0.8); margin-top: 10px; font-size: 1.05rem; }
+
+.person-main {
+  max-width: 900px;
+  margin: -40px auto 60px;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+.bio-block, .gallery-block, .other-team {
+  background: #fff;
+  border-radius: 18px;
+  padding: 34px 36px;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 28px rgba(28, 35, 51, 0.10);
+}
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+}
+.bio-block p { color: #4a5468; margin-bottom: 14px; }
+.bio-block p:last-child { margin-bottom: 0; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.gallery-item { margin: 0; }
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.gallery-item img:hover { transform: scale(1.03); }
+.gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #8a93a6;
+  text-align: center;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+.mini-card {
+  display: block;
+  text-decoration: none;
+  color: #1c2333;
+  background: #f6f7fb;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.mini-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(120, 115, 245, 0.25);
+}
+.mini-card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.back-line { text-align: center; margin-top: 22px; }
+.back-line a { color: #7873f5; font-weight: 600; text-decoration: none; }
+.back-line a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .person-hero { padding: 48px 18px 70px; text-align: center; }
+  .person-hero-photo img { width: 180px; height: 180px; }
+  .bio-block, .gallery-block, .other-team { padding: 24px 20px; }
+}
