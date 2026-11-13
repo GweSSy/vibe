@@ -161,10 +161,102 @@ body {
   font-size: .9rem;
 }
 
+/* ---------- HERO NAV (logo + link) ---------- */
+.hero-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto 48px;
+}
+.logo { font-weight: 800; font-size: 1.1rem; letter-spacing: .02em; color: #fff; }
+
+/* ---------- CARD LINKS & "Подробнее" ---------- */
+.card-link { text-decoration: none; color: inherit; display: block; }
+.card-more {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: .92rem;
+  color: #7873f5;
+}
+
+/* ---------- DECORATIVE BLOBS ---------- */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: .5;
+  animation: float 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.blob-1 { width: 320px; height: 320px; background: #4facfe; top: 30%; left: 55%; animation-delay: -3s; }
+.blob-2 { width: 260px; height: 260px; background: #ff6ec4; bottom: -80px; left: 20%; animation-delay: -8s; }
+.blob-3 { width: 200px; height: 200px; background: #7873f5; top: -60px; right: 15%; animation-delay: -5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .blob, .hero::before, .hero::after { animation: none; }
+}
+
 @media (max-width: 640px) {
   .hero { padding: 72px 20px 100px; }
-  .team-grid { margin-top: -40px; }
+  .team-grid { margin-top: -40px; gap: 16px; padding: 0 12px; }
+  .hero-nav { margin-bottom: 32px; }
 }
-  .site-header { padding: 32px 12px 20px; }
-  .team-grid { gap: 16px; padding: 0 12px; margin: 24px auto; }
+
+html { scroll-behavior: smooth; }
+
+/* ---------- PERSON DETAIL PAGE ---------- */
+.person-hero { padding-bottom: 90px; }
+.person-page {
+  max-width: 1000px;
+  margin: -50px auto 60px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) 1fr;
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+  align-items: start;
+}
+.person-photo {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(28, 35, 51, .10);
+}
+.person-photo img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.person-facts {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 30px;
+  box-shadow: 0 8px 28px rgba(28, 35, 51, .10);
+}
+.person-facts h2 { margin-bottom: 14px; }
+.person-facts p { color: #4a5468; margin-bottom: 16px; }
+.person-facts .hashtag { color: #7873f5; font-weight: 600; }
+.person-facts .hero-btn {
+  color: #fff;
+  background: linear-gradient(90deg, #7873f5, #4facfe);
+  box-shadow: 0 10px 30px rgba(120, 115, 245, .35);
+}
+@media (max-width: 760px) {
+  .person-page { grid-template-columns: 1fr; margin-top: -30px; }
+}
+
+/* ---------- GHOST BUTTON (в навбаре) ---------- */
+.hero-btn-ghost {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow: none;
+  padding: 10px 22px;
+  font-size: .92rem;
+  backdrop-filter: blur(6px);
+}
+.hero-btn-ghost:hover {
+  background: rgba(255,255,255,.16);
+  box-shadow: 0 8px 24px rgba(255, 110, 196, .3);
 }
