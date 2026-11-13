@@ -260,3 +260,50 @@ html { scroll-behavior: smooth; }
   background: rgba(255,255,255,.16);
   box-shadow: 0 8px 24px rgba(255, 110, 196, .3);
 }
+
+/* ---------- DIVIDER (текстовое окно между блоками команды) ---------- */
+.team-divider {
+  max-width: 760px;
+  margin: 0 auto 56px;
+  padding: 40px 32px;
+  text-align: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(28, 35, 51, .10);
+  position: relative;
+}
+.team-divider .hero-kicker {
+  color: #7873f5;
+  border-color: rgba(120, 115, 245, .35);
+  background: rgba(120, 115, 245, .07);
+  backdrop-filter: none;
+}
+.divider-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #1c2333;
+}
+.divider-title em {
+  font-style: normal;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4facfe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.divider-text {
+  color: #4a5468;
+  font-size: 1.02rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ---------- SECOND TEAM BLOCK (ещё двое снизу) ---------- */
+.team-grid-extra {
+  margin-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 460px));
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .team-divider { margin: 0 12px 40px; padding: 32px 20px; }
+}
