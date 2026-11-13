@@ -227,7 +227,17 @@ html { scroll-behavior: smooth; }
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(28, 35, 51, .10);
 }
-.person-photo img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+/* Защита от "фото на весь экран": картинка никогда не вылезет за карточку,
+   даже если CSS ещё не прогрузился или файл кэширован браузером. */
+.person-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
 .person-facts {
   background: #fff;
   border-radius: 18px;
