@@ -318,8 +318,30 @@ html { scroll-behavior: smooth; }
   .team-divider { margin: 0 12px 40px; padding: 32px 20px; }
 }
 
-/* ---------- PERSON SUBPAGE (hero photo + bio + gallery + mini-cards) ---------- */
-.subpage body, body.subpage { background: #f6f7fb; }
+/* ---------- PERSON SUBPAGE (hero photo + bio + gallery + mini-cards) ----------
+   Стили ниже написаны ПОД разметку person-*.html — сами HTML-файлы менять не нужно.
+   -------------------------------------------------------------------------- */
+body.subpage { background: #f6f7fb; }
+
+/* Верхняя панель на подстраницах: <nav class="sub-nav hero-nav"> вне hero,
+   поэтому делаем её тёмной плашкой в стиле шапки сайта. */
+.sub-nav {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px max(24px, calc((100vw - 1100px) / 2));
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+.sub-nav .logo { color: #fff; font-weight: 800; font-size: 1.1rem; }
+
+/* Шапка человека: header.hero.person-hero — от .hero наследуем градиент,
+   здесь лишь подгоняем отступы и выравнивание под двухколоночный блок. */
+header.person-hero { text-align: left; padding: 84px 24px 96px; }
 
 .person-hero-inner {
   position: relative;
